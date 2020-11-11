@@ -1,0 +1,18 @@
+{
+  "name": "tic-tac-toe-online",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/guilhermebarrosjs/tic-tac-toe.git",
+  "author": "Guilherme <guilhermebarros.js@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon ./server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}

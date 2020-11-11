@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tic-Tac-Toe</title>
+
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+
+    <body>
+        <div id="win-panel" class="hide">
+            <h1>Venceu</h1>
+            <button onclick="handleRestartGame()">Novo jogo</button>
+        </div>
+
+        <div id="game">
+            <div id="game-board">
+                <div id="game-panel">
+                    <h1>Tic-Tac-Toe</h1>
+                    <p>Procurando adversário.</p>
+                </div>
+        
+                <div id="board"></div>
+            </div>
+    
+            <div id="players">
+                <span>></span>
+
+                <div class="player">
+                    <span>X</span>
+                    <p>Guilherme</p>
+                </div>
+    
+                <div class="player">
+                    <span>O</span>
+                    <p>Lucas</p>
+                </div>
+            </div>
+        </div>
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="./game.js"></script>
+    </body>
+</html>
